@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Comic Helvetic;
+  font-weight: 100;
+  src: url("assets/fonts/ComicHelvetic_Light.otf");
+}
+
+@font-face {
+  font-family: Comic Helvetic;
+  font-weight: bold;
+  src: url("assets/fonts/ComicHelvetic_Heavy.otf");
+}
+
+@font-face {
+  font-family: Comic Helvetic;
+  font-weight: 300;
+  src: url("assets/fonts/ComicHelvetic_Medium.otf");
+}
+
+body {
+  font-family: Comic Helvetic;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+    background-color: black;
+    width: 96%;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-around;
+    height: 100%;
+}
+
+.navbar li {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar button a {
+  color: black;
+}
+.content { 
+  min-height: 600px;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content img {
+  width: 500px;
+  height: auto;
+}
+
+.black-container {
+  float: right;
+  background-color: black;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 700px;
+  height:auto;
+}
+.black-container h1 {
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  margin-right: 50px;
+  float: right;
+} 
+
+.black-container p {
+  color: #A13232;
+  font-size: 28px;
+  width: 90%;
+  text-align: right;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  float: right;
+}
+.info {
+  float: right;
+  width: 700px;
+  height:auto;
+}
+.info p {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  margin-right: 50px;
+  margin-top: 20px;
+  float: right;
+  text-align: right;
+}
+
+.access-button {
+  height: 100px;
+  width: 500px;
+  justify-content: center;
+  font-size: 32px;
+  float: right;
+  border-radius: 70px;
+  background-color: black;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.access-button:hover {
+  transition: 0.4s;
+  background-color: #4b4b4b;
+}
+
+.access-button a {
+  color: white;
+}
