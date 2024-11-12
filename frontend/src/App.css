@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: Comic Helvetic;
-  font-weight: bold;
+  font-weight: 700;
   src: url("assets/fonts/ComicHelvetic_Heavy.otf");
 }
 
 @font-face {
   font-family: Comic Helvetic;
-  font-weight: 300;
+  font-weight: 400;
   src: url("assets/fonts/ComicHelvetic_Medium.otf");
 }
 
@@ -22,6 +22,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -75,8 +76,9 @@ a {
     font-size: 16px;
     cursor: pointer;
 }
-.navbar button a {
-  color: black;
+.navbar button a,
+.right-side button a {
+  color: inherit;
 }
 .content { 
   min-height: 600px;
@@ -108,7 +110,7 @@ a {
 
 .black-container p {
   color: #A13232;
-  font-size: 28px;
+  font-size: 32px;
   width: 90%;
   text-align: right;
   margin: 0;
@@ -116,37 +118,62 @@ a {
   margin-right: 50px;
   float: right;
 }
-.info {
+.right-side {
   float: right;
-  width: 700px;
-  height:auto;
+  width: 650px;  
+  height: auto;
+  display: block;
+  text-align: center;
 }
-.info p {
-  color: black;
-  font-size: 24px;
-  margin: 0;
-  margin-right: 50px;
-  margin-top: 20px;
-  float: right;
-  text-align: right;
-}
-
-.access-button {
-  height: 100px;
-  width: 500px;
-  justify-content: center;
-  font-size: 32px;
-  float: right;
-  border-radius: 70px;
+.right-side button {
   background-color: black;
-  margin-top: 50px;
-  margin-right: 50px;
+  color: white;
+  border: none;
+  height: 100px;
+  width: 600px;
+  border-radius: 50px;
+  font-size: 42px;
+  cursor: pointer;
+  margin-top: 20px;
 }
-.access-button:hover {
-  transition: 0.4s;
-  background-color: #4b4b4b;
-}
-
-.access-button a {
+.right-side button a {
   color: white;
 }
+.subheading p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.background-container {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  flex-direction: row;
+}
+
+.background-container h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.background-container p {
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+}
+.background-container ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 24px;
+  width: 300px;
+}
+
