@@ -26,6 +26,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 
 .navbar {
@@ -223,4 +224,41 @@ a {
 .img2 {
   top: 250px;
   left:400px
+}
+.team {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  margin-top: 200px;
+}
+.team .left-side {
+  flex: 1;
+  background-color: black;
+  color: white;
+}
+.team .left-side h1 {
+  font-size: 70px;
+  font-weight: 100;
+  margin: 0;
+  padding-left: 20px;
+}
+.team .left-side p {
+  font-size: 20px;
+  font-weight: 100;
+  width: 400px;
+  padding-left: 50px;
+  margin: 0;
+}
+.team .right-side {
+  flex: 1;
+  background-color: white;
+}
+
+.team .right-side p, ol{
+  justify-self: right;
+  font-size: 20px;
+}
+.team .right-side p {
+  margin: 0;
+  padding-top: 100px;
 }

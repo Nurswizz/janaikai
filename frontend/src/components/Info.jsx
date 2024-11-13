@@ -1,9 +1,8 @@
 import page_1 from '../assets/img/page1.png'
 import page_2 from '../assets/img/page2.png'
 
-const Info = () => {
-    return (
-    <div className='info'>
+const Container = () => {
+  return (
     <div className='background-container'>
         <ul>
           <li>8 анонимных историй</li>
@@ -20,9 +19,19 @@ const Info = () => {
           <li>Стихотворение “Ало, Мам”</li>
         </ul>
     </div>
-    <img className='img1' src={page_1} alt="" />
-    <img className='img2'src={page_2} alt="" />
-    <div className="horizontal-line"></div>
+  )
+}
+
+const Images = () => {
+  return (
+    <div>
+      <img className='img1' src={page_1} alt="" />
+      <img className='img2'src={page_2} alt="" />
+    </div>
+  );
+}
+const Timeline = () => {
+  return (
     <div className="timeline">
       <div className="timeline-item">
         <div className="vertical-line"></div>
@@ -60,6 +69,15 @@ const Info = () => {
         <span>16 ноября</span>
       </div>
     </div>
+  );
+}
+const Info = () => {
+    return (
+    <div className='info'>
+    <Container />
+    <Images />
+    <div className="horizontal-line"></div>
+    <Timeline />
     </div>
       );
 }
