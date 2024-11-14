@@ -2,14 +2,14 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Content from './components/Content'
 import Info from './components/Info'
-import Team from './components/Team'
+import TeamHeader from './components/TeamHeader'
 function App() {
   return (
     <>
       <Navbar />
       <Content />
       <Info />
-      <Team />
+      <TeamHeader />
     </>
   )
 }

@@ -28,7 +28,10 @@ a {
   text-decoration: none;
   color: black;
 }
-
+.break { 
+  flex-basis: 100%;
+  height:0;
+}
 .navbar {
     background-color: black;
     width: 100%;
@@ -225,40 +228,56 @@ a {
   top: 250px;
   left:400px
 }
-.team {
-  width: 100%;
-  height: 600px;
+.team-container {
   display: flex;
-  margin-top: 200px;
-}
-.team .left-side {
-  flex: 1;
+  flex-wrap: wrap;
+  margin-top: 100px;
   background-color: black;
-  color: white;
-}
-.team .left-side h1 {
-  font-size: 70px;
-  font-weight: 100;
-  margin: 0;
-  padding-left: 20px;
-}
-.team .left-side p {
-  font-size: 20px;
-  font-weight: 100;
-  width: 400px;
-  padding-left: 50px;
-  margin: 0;
-}
-.team .right-side {
-  flex: 1;
-  background-color: white;
+  color:white
 }
 
-.team .right-side p, ol{
-  justify-self: right;
-  font-size: 20px;
+.team-header {
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  text-align: center;
 }
-.team .right-side p {
-  margin: 0;
-  padding-top: 100px;
+
+.team-header h1 {
+  font-size: 90px;
+  font-weight: 100;
+  margin: auto;
+  display: inline-block;
+}
+.team-header p {
+  font-size: 20px;
+  font-weight: 100;
+  width: 350px;
+  margin: auto;
+  display: block;
+}
+.members {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap:110px;
+ padding-bottom: 100px;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.member p {
+  font-weight: 400;
+}
+.member span {
+  font-weight: 100;
+}
+
+.member:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
