@@ -25,8 +25,8 @@ const Container = () => {
 const Images = () => {
   return (
     <div>
-      <img className='img1' src={page_1} alt="" />
-      <img className='img2'src={page_2} alt="" />
+      <img className='img1' src={page_1} alt="" loading='lazy'/>
+      <img className='img2'src={page_2} alt="" loading='lazy'/>
     </div>
   );
 }

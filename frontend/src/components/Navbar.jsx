@@ -6,7 +6,7 @@ const Navbar = () => {
             <ul>
                 <li><button><a href="#">Поддержать проект</a></button></li>
                 <li><a href="#">Статьи</a></li>
-                <li><a href="#"><img src={logo} alt="logo"/></a></li>
+                <li><a href="#"><img src={logo} alt="logo" loading='lazy'/></a></li>
                 <li><a href="#">Курс</a></li>
                 <li><a href="#">Связаться с нами</a></li>
             </ul>

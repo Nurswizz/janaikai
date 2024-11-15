@@ -38,7 +38,7 @@ a {
     height: 60px;
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
 }
 
 .navbar ul {
@@ -161,7 +161,7 @@ a {
   width: 100%;
   min-height: 600px;
   padding-top: 20px;
-  background: url('assets/img/curved-bg.png') no-repeat;
+  background: url('assets/img/curved-bg.png')repeat;
 }
 
 .background-container h1 {
@@ -290,3 +290,62 @@ a {
     rgba(0, 0, 0, 0.7)
   ), url('assets/img/bg.png');
 }
+
+.help {
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ), url('assets/img/bg-help.png');
+}
+
+.help-header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.help-header h1 {
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+  margin-top: 50px;
+}
+.help-content-left {
+  width: 50%;
+}
+.helper-left {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.helper-left img {
+  z-index: 1;
+}
+.helper-text {
+  display: flex;
+  background-color: gray;
+  border-radius: 100px;
+  width: 500px;
+  height:150px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+  left: -75px;
+}
+
+.helper-text p{
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
