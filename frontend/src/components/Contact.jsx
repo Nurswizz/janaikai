@@ -2,7 +2,7 @@ import heart from '../assets/icons/Heart.svg'
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <div className="contact" id='contact'>
 
             <header>
                 <p>Свяжитесь с нами</p>
@@ -11,7 +11,7 @@ const Contact = () => {
 
             <div className='content'>
                 <div className='left'>
-                    <p>Мы приветствуем ваши мысли и истории. Обращайтесь к нам по любым вопросам! 
+                    <p>Мы приветствуем ваши мысли и истории. Обращайтесь к нам по любым вопросам! <br />
                     -команда Janaiqai <img src={heart} alt="" /> </p>
                 </div>
                 <div className='right'>
