@@ -15,8 +15,7 @@ import Article5 from './assets/Articles/Article5.svg';
 const Articles = () => {
     return (
         <div className='articles'>
-            <Article img={Article1} title='Куда обратиться за помощью, когда 
-она тебе нужна'/>
+            <Article img={Article1} title='Куда обратиться за помощью, когда она тебе нужна'/>
             <Article img={Article2} title='Как воспитывать ребенка без насильственных методов'/>
             <Article img={Article3} title='Как бытовое насилие сказывается на детском ментальном здоровье.'/>
             <Article img={Article4} title='Типы насилия в отношении детей'/>
