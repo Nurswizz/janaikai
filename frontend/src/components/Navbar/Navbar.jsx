@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li><a href="/articles">Статьи</a></li>
                 <li className='lg'><a href="/"><img src={logo} alt="logo" loading='lazy'/></a></li>
                 <li><a href="/course">Курс</a></li>
-                <li><a  href="#contact">Связаться с нами</a></li>
+                <li><a  href="/#contact">Связаться с нами</a></li>
             </ul>
         </div>
     )

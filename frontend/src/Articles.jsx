@@ -1,17 +1,26 @@
 import Article from './components/Article/Article';
 import Navbar from './components/Navbar/Navbar';
+
 import './Articles.css';
+
 import pencil from './assets/icons/Pencil.png';
 import book from './assets/icons/Reading.svg';
+
+import Article1 from './assets/Articles/Article1.svg';
+import Article2 from './assets/Articles/Article2.svg';
+import Article3 from './assets/Articles/Article3.svg';
+import Article4 from './assets/Articles/Article4.svg';
+import Article5 from './assets/Articles/Article5.svg';
 
 const Articles = () => {
     return (
         <div className='articles'>
-            <Article img='https://via.placeholder.com/175' title='Article 1'/>
-            <Article img='https://via.placeholder.com/150' title='Article 2'/>
-            <Article img='https://via.placeholder.com/150' title='Article 3'/>
-            <Article img='https://via.placeholder.com/150' title='Article 4'/>
-            <Article img='https://via.placeholder.com/150' title='Article 5'/>
+            <Article img={Article1} title='Куда обратиться за помощью, когда 
+она тебе нужна'/>
+            <Article img={Article2} title='Как воспитывать ребенка без насильственных методов'/>
+            <Article img={Article3} title='Как бытовое насилие сказывается на детском ментальном здоровье.'/>
+            <Article img={Article4} title='Типы насилия в отношении детей'/>
+            <Article img={Article5}title='Определение и влияние психологического насилия'/>
         </div>
     )
 }

@@ -1,18 +1,32 @@
-
 .article {
-    border: 1px solid black; 
+    border: 2px solid black; 
     border-radius: 20px;
-    height: 200px;
+    height: 300px;
     width: 200px;
-    margin-bottom: 150px;
-    margin-left: 10px;
-    padding: 10px;
-    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
-
+.article img {
+    align-self: center;
+    width: 175px;
+    height: 175px;
+}
 .article p {
-    font-size: 12px;
+    font-size: 14px;
+}
+.link {
+    color: gray;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
 }
