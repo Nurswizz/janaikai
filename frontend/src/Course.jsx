@@ -1,5 +1,4 @@
 import Navbar from './components/Navbar/Navbar'
-
 function Course() {
     return (
         <div>

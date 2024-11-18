@@ -262,7 +262,6 @@ a {
 }
 .help-content {
   display: flex;
-
 }
 .help-content-left {
   width: 50%;
@@ -278,6 +277,7 @@ a {
   z-index: 1;
   width: auto;
   height: 100px;
+  
 }
 .helper-text {
   display: flex;

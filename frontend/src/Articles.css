@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.icon {
+   padding-top: 80px;
+   padding-right: 100px;
+}
+
+.icon img {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+.container {
+    height: 120px;
+    width: 40%;
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    position: relative;
+    left: -100px;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    font-size: 56px;
+}
+
+.container img {
+    height: 60px;
+}
+
+.articles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}

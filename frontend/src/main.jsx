@@ -7,7 +7,7 @@ import {
 
 import App from './App.jsx'
 import Course from './Course.jsx'
-
+import Articles from './Articles.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/articles',
-    element: <div>Articles</div>,
+    element: <Articles />,
   }
 ]);
 createRoot(document.getElementById('root')).render(
