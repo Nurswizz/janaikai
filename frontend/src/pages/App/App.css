@@ -1,19 +1,19 @@
 @font-face {
   font-family: Comic Helvetic;
   font-weight: 100;
-  src: url("assets/fonts/ComicHelvetic_Light.otf");
+  src: url("../../assets/fonts/ComicHelvetic_Light.otf");
 }
 
 @font-face {
   font-family: Comic Helvetic;
   font-weight: 700;
-  src: url("assets/fonts/ComicHelvetic_Heavy.otf");
+  src: url("../../assets/fonts/ComicHelvetic_Heavy.otf");
 }
 
 @font-face {
   font-family: Comic Helvetic;
   font-weight: 400;
-  src: url("assets/fonts/ComicHelvetic_Medium.otf");
+  src: url("../../assets/fonts/ComicHelvetic_Medium.otf");
 }
 
 body {
@@ -110,7 +110,7 @@ a {
   width: 100%;
   min-height: 600px;
   padding-top: 20px;
-  background: url('assets/img/curved-bg.png')repeat;
+  background: url('../../assets/img/curved-bg.png')repeat;
 }
 
 .background-container h1 {
@@ -244,7 +244,7 @@ a {
   background: linear-gradient(
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.6)
-  ), url('assets/img/bg-help.png');
+  ), url('../../assets/img/bg-help.png');
 }
 
 .help-header {
@@ -321,7 +321,7 @@ a {
   background: linear-gradient(
     rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.7)
-  ), url('assets/img/bg.png');
+  ), url('../../assets/img/bg.png');
 }
 
 .contact header {

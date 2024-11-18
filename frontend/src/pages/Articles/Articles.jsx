@@ -1,16 +1,16 @@
-import Article from './components/Article/Article';
-import Navbar from './components/Navbar/Navbar';
+import Article from '../../components/Article/Article';
+import Navbar from '../../components/Navbar/Navbar';
 
 import './Articles.css';
 
-import pencil from './assets/icons/Pencil.png';
-import book from './assets/icons/Reading.svg';
+import pencil from '../../assets/icons/Pencil.png';
+import book from '../../assets/icons/Reading.svg';
 
-import Article1 from './assets/Articles/Article1.svg';
-import Article2 from './assets/Articles/Article2.svg';
-import Article3 from './assets/Articles/Article3.svg';
-import Article4 from './assets/Articles/Article4.svg';
-import Article5 from './assets/Articles/Article5.svg';
+import Article1 from '../../assets/Articles/Article1.svg';
+import Article2 from '../../assets/Articles/Article2.svg';
+import Article3 from '../../assets/Articles/Article3.svg';
+import Article4 from '../../assets/Articles/Article4.svg';
+import Article5 from '../../assets/Articles/Article5.svg';
 
 const Articles = () => {
     return (

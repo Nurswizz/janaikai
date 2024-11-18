@@ -5,9 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import App from './App.jsx'
-import Course from './Course.jsx'
-import Articles from './Articles.jsx'
+import App from './pages/App/App.jsx'
+import Course from './pages/Course/Course.jsx'
+import Articles from './pages/Articles/Articles.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
