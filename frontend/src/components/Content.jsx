@@ -1,5 +1,6 @@
 import comics from '../assets/img/comics 1.png';
 
+var money = 0;
 const Content = () => {
     return (
         <div className='content'>
@@ -19,6 +20,9 @@ const Content = () => {
                         Получить доступ к комиксу
                     </a>
                 </button>
+            </div>
+            <div className='counter'>
+                <p> {money + 14545} тенге пожертвованно в фонд SVET благодаря вашей покупке комикса</p>
             </div>
         </div>
     );

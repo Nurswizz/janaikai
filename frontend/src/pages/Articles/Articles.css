@@ -4,7 +4,6 @@
     justify-content: space-between;
 }
 .icon {
-   padding-top: 80px;
    padding-right: 100px;
 }
 
@@ -21,8 +20,7 @@
     color: white;
     display: flex;
     position: relative;
-    left: -100px;
-    margin-top: 70px;
+    left: -100px;   
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;

@@ -22,7 +22,6 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  height: auto;
 }
 a {
   text-decoration: none;
@@ -33,45 +32,46 @@ a {
   color: inherit;
 }
 .content { 
-  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 100px;
   width: 100%;
-  height: auto;
-  display: block;
+  min-height: 700px;
+  flex-wrap: wrap;
 }
 .content img {
-  width: 500px;
-  height: auto;
+  width: 600px;
+  height: 500px;
 }
 
 .black-container {
-  float: right;
   background-color: black;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  width: 700px;
-  height:auto;
+  width:auto;
+  height:200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .black-container h1 {
   color: white;
   font-size: 70px;
+  font-weight: 100;
   margin: 0;
   margin-right: 50px;
-  float: right;
 } 
 
 .black-container p {
   color: #A13232;
-  font-size: 32px;
+  font-size: 28px;
   width: 90%;
   text-align: right;
   margin: 0;
   margin-bottom: 20px;
   margin-right: 50px;
-  float: right;
 }
 .right-side {
-  float: right;
   width: 650px;  
   height: auto;
   display: block;
@@ -88,11 +88,16 @@ a {
   cursor: pointer;
   margin-top: 20px;
 }
-.right-side button a {
-  color: white;
+
+.counter {
+  color: #bbb;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .subheading p {
-  font-size: 32px;
+  font-size: 28px;
+  font-family: 100;
   margin: 0;
 }
 .info {
@@ -104,7 +109,6 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 100px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -316,6 +320,7 @@ a {
   height: auto;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   flex-direction: column;
   background: linear-gradient(
@@ -347,7 +352,6 @@ a {
 .contact .content .left {
   width: 30%;
   display: flex;
-  padding-left: 100px;
   font-size: 32px;
 }
 
