@@ -16,13 +16,15 @@
   src: url("../../assets/fonts/ComicHelvetic_Medium.otf");
 }
 
-body {
+html, body {
   font-family: Comic Helvetic;
   font-weight: 100;
   font-size: 16px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -31,6 +33,7 @@ a {
 .right-side button a {
   color: inherit;
 }
+
 .content { 
   display: flex;
   justify-content: space-between;
@@ -39,6 +42,7 @@ a {
   min-height: 700px;
   flex-wrap: wrap;
 }
+
 .content img {
   width: 600px;
   height: 500px;
@@ -48,19 +52,20 @@ a {
   background-color: black;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  width:auto;
-  height:200px;
+  width: auto;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .black-container h1 {
   color: white;
   font-size: 70px;
   font-weight: 100;
   margin: 0;
   margin-right: 50px;
-} 
+}
 
 .black-container p {
   color: #A13232;
@@ -71,12 +76,14 @@ a {
   margin-bottom: 20px;
   margin-right: 50px;
 }
+
 .right-side {
-  width: 650px;  
+  width: 650px;
   height: auto;
   display: block;
   text-align: center;
 }
+
 .right-side button {
   background-color: black;
   color: white;
@@ -95,14 +102,17 @@ a {
   width: 100%;
   justify-content: center;
 }
+
 .subheading p {
   font-size: 28px;
   font-family: 100;
   margin: 0;
 }
+
 .info {
   position: relative;
 }
+
 .background-container {
   background-color: black;
   color: white;
@@ -114,7 +124,7 @@ a {
   width: 100%;
   min-height: 600px;
   padding-top: 20px;
-  background: url('../../assets/img/curved-bg.png')repeat;
+  background: url('../../assets/img/curved-bg.png') repeat;
 }
 
 .background-container h1 {
@@ -125,6 +135,7 @@ a {
   margin-top: 50px;
   justify-self: center;
 }
+
 .background-container p {
   font-size: 20px;
   font-weight: 100;
@@ -133,6 +144,7 @@ a {
   position: relative;
   bottom: 30px;
 }
+
 .background-container ul {
   margin: 0;
   padding: 0;
@@ -146,6 +158,7 @@ a {
   background-color: rgb(0, 0, 0);
   margin-top: 50px;
 }
+
 .vertical-line {
   background-color: black;
   height: 50px;
@@ -159,34 +172,41 @@ a {
   background-color: white;
   color: black;
 }
+
 .timeline-item {
   text-align: center;
 }
+
 .timeline-item p {
   font-size: 18px;
   margin: 0;
 }
+
 .timeline-item span {
   font-size: 16px;
   color: #bbb;
 }
+
 .img1, .img2 {
   position: absolute;
 }
+
 .img1 {
   top: 250px;
-  left:120px;
+  left: 120px;
 }
+
 .img2 {
   top: 250px;
-  left:400px
+  left: 400px;
 }
+
 .team-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
   background-color: black;
-  color:white
+  color: white;
 }
 
 .team-header {
@@ -202,6 +222,7 @@ a {
   margin: auto;
   display: inline-block;
 }
+
 .team-header p {
   font-size: 20px;
   font-weight: 100;
@@ -209,35 +230,40 @@ a {
   margin: auto;
   display: block;
 }
+
 .members {
- width: 100%;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- gap:110px;
- padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 110px;
+  padding-bottom: 100px;
 }
+
 .member {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
+
 .member p {
   font-weight: 400;
 }
+
 .member span {
   font-weight: 100;
 }
+
 .member img {
   height: 200px;
   width: auto;
 }
+
 .member:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
 }
-
 
 .help {
   width: 100%;
@@ -246,7 +272,7 @@ a {
   margin: 0;
   padding: 0;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)
   ), url('../../assets/img/bg-help.png');
 }
@@ -264,12 +290,15 @@ a {
   color: white;
   margin-top: 50px;
 }
+
 .help-content {
   display: flex;
 }
+
 .help-content-left {
   width: 50%;
 }
+
 .helper {
   display: flex;
   margin-bottom: 75px;
@@ -277,27 +306,27 @@ a {
   padding-right: 75px;
   width: auto;
 }
+
 .helper img {
   z-index: 1;
   width: auto;
   height: 100px;
-  
 }
+
 .helper-text {
   display: flex;
   background-color: gray;
   border-radius: 100px;
   width: 500px;
-  height:100px;
+  height: 100px;
   flex-direction: column;
   align-self: center;
   align-items: center;
   justify-content: center;
   z-index: 0;
-
 }
 
-.helper p{
+.helper p {
   font-size: 24px;
   color: white;
   margin: 0;
@@ -324,7 +353,7 @@ a {
   font-weight: 400;
   flex-direction: column;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
   ), url('../../assets/img/bg.png');
 }
@@ -336,6 +365,7 @@ a {
   margin-top: 20px;
   font-size: 48px;
 }
+
 .contact header img {
   width: 32px;
   height: 32px;
@@ -349,6 +379,7 @@ a {
   margin-top: 0px;
   justify-content: space-around;
 }
+
 .contact .content .left {
   width: 30%;
   display: flex;
@@ -379,6 +410,7 @@ form {
   padding: 20px;
   width: 350px;
 }
+
 input, textarea {
   margin-bottom: 20px;
 }
@@ -399,10 +431,20 @@ textarea {
 
 .right button {
   background-color: rgb(118, 118, 118);
-  color: white; 
+  color: white;
   border: none;
-  border-radius: 50px;
-  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
   cursor: pointer;
-  height: 50px;
 }
+
+form button {
+  align-self: center;
+}
+
+.help-content-right {
+  text-align: left;
+}
+
+
+

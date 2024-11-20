@@ -1,4 +1,5 @@
 import './App.css'
+import './App-Responsive.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Content from '../../components/Content'
 import Info from '../../components/Info'
