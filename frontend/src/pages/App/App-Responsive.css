@@ -46,19 +46,19 @@
       align-items: center;
       justify-content: center;
       margin: 0;
-      min-height: 150px;
+      height: auto;
       width: 100%;
       padding: 20px;
       margin-bottom: 30px;
     }
   
     .black-container h1 {
-      font-size: 40px;
+      font-size: 84px;
       margin-right: 0;
     }
   
     .black-container p {
-      font-size: 24px;
+      font-size: 36px;
       margin-right: 0;
       text-align: center;
     }
