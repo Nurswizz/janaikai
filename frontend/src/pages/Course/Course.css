@@ -17,7 +17,7 @@ body {
 .qorgan, .jarqyn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 120px;
 }
 
@@ -28,6 +28,20 @@ body {
 
 .jarqyn img {
     transform: rotate(5deg);
-    width: 560px;
+    width: 500px;
 }
 
+@media (max-width: 1126px) {
+    .qorgan p, .jarqyn p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 20px;
+    }
+    .jarqyn img {
+        width: 300px;
+    }
+}

@@ -1,3 +1,13 @@
+@media (max-width: 425px) {
+    .icon {
+        display: none;
+    }
+}
+
+.container {
+    height: 80px;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -13,14 +23,13 @@
     margin-left: 10px;
 }
 .container {
-    height: 120px;
-    width: 600px;
+    width: auto;
     background-color: black;
-    border-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
     color: white;
     display: flex;
-    position: relative;
-    left: -100px;   
+    position: relative;   
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
