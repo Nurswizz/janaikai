@@ -4,7 +4,7 @@ html {
 .navbar {
     background-color: black;
     width: 100%;
-    height: 60px;
+    height: 80px;
     position: fixed;
     top: 0px;
     z-index: 100;
@@ -21,14 +21,14 @@ html {
 }
 
 .navbar li {
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   height: 100%;
   width: 20%;
 }
-.navbar li:not(.lg, .btn):hover {
+.navbar li:not(.lg):not(.btn):hover {
   transition: 0.3s;
   background-color: #3b3b3b;
 }   
@@ -41,7 +41,7 @@ html {
 
 .navbar img {
     width: auto;
-    height: 50px;
+    height: 40px;
     margin-right: 10px;
 }
 
@@ -63,3 +63,50 @@ html {
     background-color: #868686;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+/* General styling remains the same */
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    
+    .navbar ul {
+      flex-direction: column-reverse;
+      padding-bottom: 20px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: black;
+      width: 100%;
+      height: auto;
+      display: none; /* Hidden by default */
+      z-index: 99;
+
+    }
+  
+    .navbar ul.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .navbar li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+  
+    .navbar img {
+      height: 40px; /* Adjust logo size */
+    }
+  }
+  

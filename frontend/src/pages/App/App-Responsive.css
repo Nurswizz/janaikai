@@ -1,5 +1,16 @@
-.root {
-  width: 100%;
+
+
+@media (max-width: 900px) and (min-width: 550px) {
+  .background-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .help h1 {
+      font-size: 50px;
+    }
+    .helper-text p{
+      font-size: 18px;
+    }
 }
 
 @media (max-width: 1250px) {
@@ -175,18 +186,28 @@
       .horizontal-line {
         display: none;
       }
-      .helper-text {
-        font-size: 1.5rem;
-        font-size: clamp(1.5rem, 5vw, 2rem);
+      .helper-text p{
+        font-size: 15px;
+      }
+      .helper img {
+        width: 100px;
+        height: 100px;
       }
   }
 
-  @media (max-width: 900px) {
-    .background-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .help h1 {
-        font-size: 50px;
-      }
+
+
+  @media (max-width: 450px) {
+    .helper-text p{
+      font-size: 8px;
+    }
+    .helper-text {
+      height: 80px;
+    }
+    .black-container h1 {
+      font-size: 50px;
+    }
+    .black-container p {
+      font-size: 20px;
+    }
   }
