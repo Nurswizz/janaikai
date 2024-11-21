@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurswizz/janaikai.git"
+  },
+  "author": "Nurswizz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nurswizz/janaikai/issues"
+  },
+  "homepage": "https://github.com/Nurswizz/janaikai#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
