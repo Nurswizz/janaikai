@@ -1,6 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Course.css'
-import jarqyn from '../../assets/img/Jarqyn.svg'
+import jarqyn from '../../assets/img/jarqyn.svg'
 const Content = () => {
     return (
         <div className='content-course'>
