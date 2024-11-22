@@ -15,7 +15,8 @@ const Contact = () => {
                     -команда Janaiqai <img src={heart} alt="" /> </p>
                 </div>
                 <div className='right'>
-                    <form action="" method='POST'>
+                    <form action="" method='POST' name="contact" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" /> e
                         <input type="text" name='name' placeholder='Name' />
                         <input type="text" name='surname' placeholder='Surname' />
                         <input type="email" name='email' placeholder='Email' />
