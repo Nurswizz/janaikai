@@ -1,5 +1,5 @@
-import page_1 from '../assets/img/page1.png'
-import page_2 from '../assets/img/page2.png'
+import page_1 from '../assets/img/page1.webp'
+import page_2 from '../assets/img/page2.webp'
 
 const Container = () => {
   return (

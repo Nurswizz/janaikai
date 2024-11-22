@@ -273,7 +273,7 @@ a {
   background: linear-gradient(
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)
-  ), url('../../assets/img/bg-help.png');
+  ), url('../../assets/img/bg-help.webp');
 }
 
 .help-header {
@@ -378,7 +378,7 @@ a {
   background: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
-  ), url('../../assets/img/bg.png');
+  ), url('../../assets/img/bg.webp');
 }
 
 .contact header {

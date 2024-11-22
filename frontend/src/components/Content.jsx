@@ -1,4 +1,4 @@
-import comics from '../assets/img/comics 1.png';
+import comics from '../assets/img/comics 1.webp';
 
 var money = 0;
 const Content = () => {
