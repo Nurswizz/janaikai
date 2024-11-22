@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 .navbar {
     background-color: black;
     width: 100%;
@@ -104,6 +105,8 @@ html {
       top: 15px;
       right: 20px;
     }
+
+  
   
     .navbar img {
       height: 40px; /* Adjust logo size */

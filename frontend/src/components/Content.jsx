@@ -4,7 +4,7 @@ var money = 0;
 const Content = () => {
     return (
         <div className='content'>
-            <img src={comics} alt="comics" />
+            <img src={comics} alt="comics" width={767} height={678}/>
             <div className='right-side'>
                 <div className='black-container'>
                     <h1>JANAIQAI</h1>
