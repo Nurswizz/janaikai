@@ -310,6 +310,7 @@ a {
   z-index: 1;
   width: auto;
   height: 100px;
+  background-color: gray;
 }
 
 .helper-text {
@@ -325,8 +326,31 @@ a {
   z-index: 0;
 }
 
+.help-content-left .helper-text {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.help-content-right .helper-text {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.help-content-left .helper img {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  position: relative;
+  left:10px;
+}
+
+.help-content-right .helper img {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  position: relative;
+  right: 10px;
+}
+
 .helper p {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   margin: 0;
   padding: 0;
