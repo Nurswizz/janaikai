@@ -232,9 +232,14 @@
     .black-container p {
       font-size: 20px;
     }
-
+    .members {
+      gap: 40px;
+    }
     .member img {
       height: 100px;
+    }
+    .member p, span {
+      font-size: 12px;
     }
     .contact .content p {
       font-size: 20px;
