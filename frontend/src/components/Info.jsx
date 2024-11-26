@@ -61,12 +61,12 @@ const Timeline = () => {
       <div className="timeline-item">
         <div className="vertical-line"></div>
         <p>Создание сайта</p>
-        <span>5-15 ноября</span>
+        <span>5-29 ноября</span>
       </div>
       <div className="timeline-item">
         <div className="vertical-line"></div>
         <p>Выпуск</p>
-        <span>16 ноября</span>
+        <span>30 ноября</span>
       </div>
     </div>
   );
