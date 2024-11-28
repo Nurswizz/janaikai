@@ -1,6 +1,5 @@
 import comics from '../assets/img/comics 1.webp';
 
-var money = 0;
 const Content = () => {
     return (
         <div className='content'>
@@ -16,14 +15,14 @@ const Content = () => {
                         </p>
                 </div>
             </div>
-            <button>
+            <button className='main-btn'>
                     <a href="#">
                         Получить доступ к комиксу
                     </a>
             </button>
-            <div className='counter'>
+            {/* <div className='counter'>
                 <p> {money + 14545} тенге пожертвованно в фонд SVET благодаря вашей покупке комикса</p>
-            </div>
+            </div> */}
         </div>
     );
 }

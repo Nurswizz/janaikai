@@ -30,26 +30,32 @@ a {
   color: black;
 }
 
-.right-side button a {
+.content button a {
   color: inherit;
 }
-
-
+.black-container {
+  grid-area: container;
+}
+.subheading {
+  grid-area: subheading;
+}
 .content img {
   width: 600px;
   height: 500px;
+  grid-area: img;
 }
-
 .black-container {
   background-color: black;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  width: 50%;
+  width: 70%;
+  justify-self: flex-end;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 50px;
+  justify-content: center;
+  
 }
 
 .black-container h1 {
@@ -71,15 +77,13 @@ a {
 }
 
 .right-side {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
   width: 100%;
+  grid-template-areas: "img container"
+  "img subheading";
 }
 
-.right-side button {
+.main-btn {
   background-color: black;
   color: white;
   border: none;
@@ -88,7 +92,9 @@ a {
   border-radius: 50px;
   font-size: 42px;
   cursor: pointer;
-  margin-top: 20px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .counter {
@@ -97,12 +103,17 @@ a {
   width: 100%;
   justify-content: center;
 }
-
+.subheading {
+  width: 70%;
+  justify-self: flex-end; 
+}
 .subheading p {
   font-size: 28px;
   font-family: 100;
   margin: 0;
-  
+  width: 100%;
+  text-align: center  ;
+  padding: 0;
 }
 
 .info {
@@ -458,9 +469,10 @@ textarea {
   cursor: pointer;
 }
 
-form button {
+.contact-btn {
   align-self: center;
 }
+
 
 
 
