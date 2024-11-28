@@ -4,23 +4,23 @@ var money = 0;
 const Content = () => {
     return (
         <div className='content'>
-            <img src={comics} alt="comics" width={767} height={678}/>
             <div className='right-side'>
                 <div className='black-container'>
                     <h1>JANAIQAI</h1>
                     <p>Иногда самые громкие крики о помощи остаются неуслышанными</p>
                 </div>
+                <img src={comics} alt="comics" width={767} height={678}/>
                 <div className='subheading'>
-                    <p>
-                    Janaiqai comics - комикс, посвященный одной из острых социальных проблем в Центральной Азии. По статистике каждая 5 женщина и каждый 13 мужчина подвергались насилию в детстве. 
-                    </p>
+                        <p>
+                        Janaiqai comics - комикс, посвященный одной из острых социальных проблем в Центральной Азии. По статистике каждая 5 женщина и каждый 13 мужчина подвергались насилию в детстве. 
+                        </p>
                 </div>
-                <button>
+            </div>
+            <button>
                     <a href="#">
                         Получить доступ к комиксу
                     </a>
-                </button>
-            </div>
+            </button>
             <div className='counter'>
                 <p> {money + 14545} тенге пожертвованно в фонд SVET благодаря вашей покупке комикса</p>
             </div>

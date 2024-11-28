@@ -20,9 +20,6 @@
       margin: 0;
     }
   
-    ::-webkit-scrollbar {
-      -webkit-appearance: none;
-  }
     .content {
       flex-direction: column;
       align-items: center;
@@ -34,6 +31,7 @@
     .content img {
       max-width: 100%;
       height: auto;
+      order: 2;
     }
   
     .right-side {
@@ -47,6 +45,12 @@
     .right-side button {
       width: 90%;
       font-size: 32px;
+      order: 4;
+    }
+    .subheading {
+      font-size: 24px;
+      margin-top: 20px;
+      order: 3;
     }
   
     .black-container {
@@ -61,7 +65,9 @@
       width: 100%;
       padding: 20px;
       margin-bottom: 30px;
+      order: 1;
     }
+    
   
     .black-container h1 {
       font-size: 84px;
