@@ -118,6 +118,7 @@ a {
 
 .info {
   position: relative;
+  margin-top: 100px;
 }
 
 .background-container {
@@ -432,7 +433,7 @@ a {
   justify-content: flex-end;
 }
 
-form {
+.contact form {
   display: flex;
   flex-direction: column;
   border: 3px solid gray;
@@ -442,18 +443,18 @@ form {
   width: 350px;
 }
 
-input, textarea {
+.conact input, textarea {
   margin-bottom: 20px;
 }
 
-input {
+.contact input {
   height: 30px;
   border-radius: 10px;
   border: none;
   padding-left: 10px;
 }
 
-textarea {
+.contact textarea {
   border-radius: 10px;
   border: none;
   padding-left: 10px;

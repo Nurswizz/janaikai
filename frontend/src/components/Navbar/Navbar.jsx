@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul className={menuOpen ? 'active' : ''}>
         <li className="btn">
           <button>
-            <a href="#">Поддержать проект</a>
+            <a href="/support">Поддержать проект</a>
           </button>
         </li>
         <li><a href="/articles">Статьи</a></li>

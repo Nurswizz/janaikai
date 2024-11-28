@@ -16,7 +16,7 @@ const Content = () => {
                 </div>
             </div>
             <button className='main-btn'>
-                    <a href="#">
+                    <a href="/support">
                         Получить доступ к комиксу
                     </a>
             </button>

@@ -8,6 +8,7 @@ import {
 import App from './pages/App/App.jsx'
 import Course from './pages/Course/Course.jsx'
 import Articles from './pages/Articles/Articles.jsx'
+import Payment from './pages/Payment/Payment.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/articles',
     element: <Articles />,
+  },
+  {
+    path: '/support',
+    element: <Payment />,
   }
 ]);
 createRoot(document.getElementById('root')).render(
