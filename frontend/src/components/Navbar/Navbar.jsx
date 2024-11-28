@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import logo from '../../assets/img/logo.png';
 import './Navbar.css';
 
@@ -7,8 +7,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
+  };  
   return (
     <div className="navbar">
       <span className="menu-toggle" onClick={toggleMenu}>
