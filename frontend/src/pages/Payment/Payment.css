@@ -1,0 +1,59 @@
+/* body {
+    background-image: url('../../assets/img/bg-help.webp');
+    background-size:75%;
+} */
+
+.support p, h1 {
+    color: white;
+    text-align: center;
+    max-width: 500px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0, 0, 0.5);
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+.form h1 {
+    font-size: 2rem;
+}
+
+.form input {
+    background-color: white;
+    height: 32px;
+}
+
+.btn-submit {
+    min-width: 25%;
+    align-self: center;
+    margin-top: 10px;
+    background-color: rgb(16, 190, 16);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    margin-top: 40px;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+@media screen and (max-width: 1250px) {
+    .form {
+        width: 90%;
+    }
+
+    .form form {
+        max-width: 50%;
+    }
+
+
+    
+    
+}
+

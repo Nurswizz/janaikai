@@ -9,6 +9,8 @@ import App from './pages/App/App.jsx'
 import Course from './pages/Course/Course.jsx'
 import Articles from './pages/Articles/Articles.jsx'
 import Payment from './pages/Payment/Payment.jsx'
+import './index.css'
+
 const router = createBrowserRouter([
   {
     path: '/',
