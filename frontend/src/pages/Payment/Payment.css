@@ -35,6 +35,8 @@
     border-radius: 10px;
     font-size: 28px;
     margin-top: 40px;
+    cursor: pointer;
+    font-family: Comic Helvetic;
 }
 .form form {
     display: flex;

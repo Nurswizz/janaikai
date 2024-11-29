@@ -21,7 +21,7 @@ const TeamHeader = () => {
             <div className='members'>
                 <Member image={Nurgul} name='Nurgul' role='Script Writer' />
                 <Member image={Aruzhan} name='Aruzhan' role='Manager, Scriptwriter' />
-                <Member image={Aru} name='Aru' role='Founder' />
+                <Member image={Aru} name='Aru' role='Founder' className="aru"/>
                 <Member image={Dilara} name='Dilara' role='UX/UI Designer' />
                 <Member image={Jasmin} name='Jasmine' role='Illustrator, Designer' />
                 <Member image={Nursultan} name='Nursultan' role='Web Developer' />

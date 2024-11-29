@@ -6,10 +6,10 @@ import jarqyn from '../assets/helpers/Ellipse-2.png';
 import svet from '../assets/helpers/Ellipse-3.png';
 import tellme from '../assets/helpers/Ellipse-4.png';
 
-const Helper = ({ name, role, img }) => {
+const Helper = ({ name, role, img}) => {
     return (
         <div className='helper'>
-            <img src={img} alt="" />
+            <img src={img} alt="logo" />
             <div className='helper-text'>
                 <p>{name}</p>
                 <p>{role}</p>
@@ -37,7 +37,7 @@ const Help = () => {
                 </div>
                 <div className="help-content-right">
                     <Helper name="@Jarqyn.project" role="Проект по ментальному здоровью среди молодежи" img={jarqyn}/>
-                    <Helper name="Общественный фонд SVET " role="Фонд, который существует уже 6 лет и помогает жертвам насилия" img={svet}/>
+                    <Helper name="Qyial" role="Уютный магазин комиксов в PlatformA (Алматы, Абылай хана, 125)" img={svet} />
                     <Helper name="@tellme_sister" role="СМИ о женщинах в Таджикистане" img={tellme}/>
                 </div>
             </div>

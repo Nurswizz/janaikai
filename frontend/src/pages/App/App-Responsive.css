@@ -9,10 +9,18 @@
       font-size: 50px;
     }
     .helper-text p{
-      font-size: 18px;
+      font-size: 10px;
     }
+    .contact-item p{
+      font-size: 13px;
+    }
+  
 }
-
+@media (max-width: 1439px) {
+  #aru {
+    order: -1;
+  }
+}
 @media (max-width: 1250px) {
     body {
       font-size: 14px;
@@ -258,7 +266,13 @@
 
     .contact button {
       font-size: 20px;
-      
     }
-
+    
+    .contact-item p{
+      font-size: 8px;
+    }
+    .contact-item img {
+      width: 20px;
+      height: 20px;
+    }
   }

@@ -147,10 +147,9 @@ a {
 .background-container p {
   font-size: 20px;
   font-weight: 100;
-  display: flex;
-  justify-content: center;
   position: relative;
   bottom: 30px;
+  max-width: 250px;
 }
 
 .background-container ul {
@@ -205,7 +204,7 @@ a {
 }
 
 .img2 {
-  top: 250px;
+  top: 300px;
   left: 400px;
 }
 
@@ -321,6 +320,7 @@ a {
   height: 100px;
   background-color: gray;
 }
+
 
 .helper-text {
   display: flex;
@@ -474,7 +474,39 @@ a {
   align-self: center;
 }
 
-
-
-
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(16, 16, 16);
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  border-top: 1px solid gray;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.bottom a {
+  color: white;
+}
+.bottom-content {
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+.contact-item img {
+  width: 28px;
+  margin-right: 5px;
+}
+.contact-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
 

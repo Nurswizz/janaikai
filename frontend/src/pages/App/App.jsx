@@ -6,6 +6,7 @@ import Info from '../../components/Info'
 import TeamHeader from '../../components/TeamHeader'
 import Contact from '../../components/Contact'
 import Help from '../../components/Help'
+import Bottom from '../../components/Bottom'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <TeamHeader />
       <Help />
       <Contact />
+      <Bottom />
     </>
   )
 }

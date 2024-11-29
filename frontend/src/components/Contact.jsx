@@ -1,3 +1,4 @@
+
 import heart from '../assets/icons/Heart.svg'
 
 const Contact = () => {
@@ -28,5 +29,6 @@ const Contact = () => {
         </div>
     )
 }
+
 
 export default Contact;
