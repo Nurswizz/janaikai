@@ -6,7 +6,6 @@ import process from 'process';
 import {useNavigate} from 'react-router-dom';
 
 
-
 const Form = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
