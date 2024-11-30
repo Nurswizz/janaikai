@@ -2,7 +2,7 @@ import './Payment.css';
 import Navbar from '../../components/Navbar/Navbar';
 import axios from 'axios';
 import { useState } from 'react';
-import process from 'process';
+// import process from 'process';
 import {useNavigate} from 'react-router-dom';
 
 
@@ -13,13 +13,13 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(process.env.REACT_APP_SENDING_URL, {email});
+            const response = await axios.post("https://janaikai.onrender.com", {email});
             setMessage(response.data.message);
-            await navigate('/'); 
+            console.log(response);
             alert('Комикс был отправлен, проверьте свою почту!');
-            
+            await navigate('/'); 
         } catch(error) {
-            setMessage(error.response.data.message);
+            setMessage(error.response?.data?.message);
             console.log(error);
         }
     }

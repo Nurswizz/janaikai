@@ -15,7 +15,7 @@ app.post('/', (req, res) => {
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         return res.status(400).json({ message: 'Email введен неккоректно или не введен вовсе' });
     }
-    sendComics(email);
+    // sendComics(email);
     res.json({ message: `Комикс был отправлен, проверьте свою почту!` });
 });
 
