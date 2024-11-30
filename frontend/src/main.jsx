@@ -28,6 +28,7 @@ const router = createBrowserRouter([
     path: '/support',
     element: <Payment />,
   }
+  
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
