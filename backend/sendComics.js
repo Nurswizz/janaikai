@@ -22,7 +22,7 @@ const mailjetClient = require('node-mailjet');
         Subject: 'Комикс от Janaiqai',
         TextPart: 'Спасибо за покупку комикса',
         HTMLPart:
-          '<h3>Искренне благодарим вас за покупку нашего комикса</h3><br /> <p>Ваш комикс прикреплен к этому письму в виде PDF файла</p> <br /> <p>С уважением, команда Janaiqai</p>',
+          '<h3>Искренне благодарим вас за покупку нашего комикса</h3><br /> <p>По ссылке внизу вы сможете скачать комикс</p> <br /> <a>https://e.pcloud.link/publink/show?code=XZOYaxZA3NdEqRvcChI67aYecWyt7DXuehy</a> </br> <p>С уважением, команда Janaiqai</p>',
       },
     ],
   })

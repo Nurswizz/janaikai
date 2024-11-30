@@ -4,10 +4,13 @@ const app = express();
 const cors = require('cors');
 const sendComics = require('./sendComics');
 const PORT = process.env.PORT || 3000;
+const API_KEY = process.env.API_KEY;
+
 app.use(cors({ origin: process.env.URL_FRONTEND}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 
 
 app.post('/', (req, res) => {
@@ -18,6 +21,7 @@ app.post('/', (req, res) => {
     sendComics(email);
     res.json({ message: `Комикс был отправлен, проверьте свою почту!` });
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
