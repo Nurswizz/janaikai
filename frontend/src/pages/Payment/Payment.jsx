@@ -16,7 +16,6 @@ const Form = () => {
         try {
             const response = await axios.post(import.meta.env.VITE_BACKEND_URL, {email});
             setMessage(response.data.message);
-            console.log(response);
             alert('Комикс был отправлен, проверьте свою почту!');
             await navigate('/'); 
         } catch(error) {
@@ -36,8 +35,9 @@ const Form = () => {
             <p>Стоимость комикса: n тенге</p>
             <form onSubmit={handleSubmit}>
                 <input type="email" placeholder='Email' value={email} disabled={loading} onChange={(e) => setEmail(e.target.value)}/>
-                {message && <p>{message}</p>}
-                <button className='btn-submit' type='submit'>Оплачено</button>
+                {loading && <p>Подождите, идет загрузка</p>}
+                {loading && <div className="loader"></div>} 
+                <button className='btn-submit' type='submit' disabled={loading}>Оплачено</button>
             </form>
         </div>
     )
