@@ -2,18 +2,19 @@ import './Payment.css';
 import Navbar from '../../components/Navbar/Navbar';
 import axios from 'axios';
 import { useState } from 'react';
-// import process from 'process';
 import {useNavigate} from 'react-router-dom';
 
 
 const Form = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         try {
-            const response = await axios.post("https://janaikai.onrender.com", {email});
+            const response = await axios.post(import.meta.env.VITE_BACKEND_URL, {email});
             setMessage(response.data.message);
             console.log(response);
             alert('Комикс был отправлен, проверьте свою почту!');
@@ -21,6 +22,8 @@ const Form = () => {
         } catch(error) {
             setMessage(error.response?.data?.message);
             console.log(error);
+        } finally {
+            setLoading(false);
         }
     }
     
@@ -32,7 +35,7 @@ const Form = () => {
             <p>Как только осуществляется перевод, нажмите на кнопку оплачено написав ваш Email. Сам комикс придет вам на почту в виде PDF файла сразу же после нажатия кнопки</p>
             <p>Стоимость комикса: n тенге</p>
             <form onSubmit={handleSubmit}>
-                <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <input type="email" placeholder='Email' value={email} disabled={loading} onChange={(e) => setEmail(e.target.value)}/>
                 {message && <p>{message}</p>}
                 <button className='btn-submit' type='submit'>Оплачено</button>
             </form>

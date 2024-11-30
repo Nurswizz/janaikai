@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const sendComics = require('./sendComics');
 const PORT = process.env.PORT || 3000;
-app.use(cors({ origin: "https://janaiqai.kz" }));
+app.use(cors({ origin: process.env.URL_FRONTEND }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
