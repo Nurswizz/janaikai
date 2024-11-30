@@ -29,15 +29,15 @@ const Form = () => {
     return (
         <div className="form">
             <h1>Купить комикс</h1>
-            <p>Покупка осуществляется через перевод на карту по данным реквизитам:</p>
-            <p>Здесь будут реквизиты</p>
-            <p>Как только осуществляется перевод, нажмите на кнопку оплачено написав ваш Email. Сам комикс придет вам на почту в виде PDF файла сразу же после нажатия кнопки</p>
-            <p>Стоимость комикса: n тенге</p>
+            <p>Покупка осуществляется через Kaspi QR по данной ссылке:</p>
+            <a href="https://kaspi.kz/pay/svet" target='_blank'> <i> Оплатить </i></a>
+            <p>Как только оплатили через Kaspi QR, нажмите на кнопку оплачено написав ваш Email. Сам комикс придет вам на почту в виде PDF файла сразу же после нажатия кнопки</p>
+            <p>Стоимость комикса: 1000 тенге</p>
             <form onSubmit={handleSubmit}>
                 <input type="email" placeholder='Email' value={email} disabled={loading} onChange={(e) => setEmail(e.target.value)}/>
                 {loading && <p>Подождите, идет загрузка</p>}
                 {loading && <div className="loader"></div>} 
-                <button className='btn-submit' type='submit' disabled={loading}>Оплачено</button>
+                <button className='btn-submit' type='submit' disabled={loading}>Получить комикс</button>
             </form>
         </div>
     )
