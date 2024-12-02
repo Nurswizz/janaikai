@@ -1,11 +1,12 @@
 require('dotenv').config();
 const mailjetClient = require('node-mailjet');
 
-  const mailjet = mailjetClient.apiConnect(
+const mailjet = mailjetClient.apiConnect(
     process.env.MJ_APIKEY_PUBLIC,
     process.env.MJ_APIKEY_PRIVATE
   );
-  const sendEmail = (email) => {
+  
+const sendEmail = (email) => {
   const request = mailjet.post('send', { version: 'v3.1' }).request({
     Messages: [
       {
@@ -34,4 +35,4 @@ const mailjetClient = require('node-mailjet');
       console.log(err.statusCode)
     })
 }
-module.exports = sendEmail;
+module.exports = {sendEmail};
