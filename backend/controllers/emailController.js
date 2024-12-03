@@ -5,6 +5,3 @@ exports.sendEmail = (req, res) => {
     sendComics(email);
     res.json({ message: 'Комикс был отправлен, проверьте свою почту!' });
 };
-exports.getEmail = (req, res) => {
-    res.json({ message: 'Email sent' });
-}

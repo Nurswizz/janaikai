@@ -24,11 +24,23 @@ const Admin = () => {
     }, [navigate]);
 
     return (
-        <div className='admin-panel'>
-            <h1>Admin Panel</h1>
-            <p>Welcome to the admin panel</p>
-            <LogoutButton />
-        </div>
+        <>
+            <div className='admin-panel'>
+                <div className='email-data'>
+                    <h1>Email Data</h1>
+                    <p>Here you can view all the emails that have been sent.</p>
+                    <button onClick={() => navigate('/admin/emails')}>View Emails</button>
+                </div>
+                <div className='articles-data'>
+                    <h1>Articles Info</h1>
+                    <p>Here you can view all the articles that have been created.</p>
+                    <button onClick={() => navigate('/admin/articles')}>View Articles</button>
+                </div>
+            </div>
+            <footer>
+                <LogoutButton />
+            </footer>
+        </>
     );
 }
 

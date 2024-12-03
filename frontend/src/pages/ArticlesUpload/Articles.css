@@ -1,0 +1,5 @@
+.articles-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap:100px;
+}

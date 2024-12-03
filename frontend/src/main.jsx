@@ -12,6 +12,8 @@ import Payment from './pages/Payment/Payment.jsx'
 import Admin from './pages/Admin/Admin.jsx' 
 import Login from './pages/Login/Login.jsx'
 import ProtectedRoute from './pages/ProtectedRoute/ProtectedRoute.jsx';
+import ArticlesUpload from './pages/ArticlesUpload/Articles.jsx'
+import Email from './pages/Email/Email.jsx';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -42,6 +44,22 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/admin/articles",
+    element: (
+      <ProtectedRoute>
+        <ArticlesUpload />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/admin/emails",
+    element: (
+      <ProtectedRoute>
+        <Email />
+      </ProtectedRoute>
+    ),
   }
 ]);
 createRoot(document.getElementById('root')).render(

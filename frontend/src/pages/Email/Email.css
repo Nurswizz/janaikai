@@ -1,0 +1,16 @@
+.email-table {
+    border: 1px solid black;
+    margin: auto;
+}
+
+.email-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}

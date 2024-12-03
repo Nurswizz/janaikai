@@ -35,4 +35,4 @@ const sendEmail = (email) => {
       console.log(err.statusCode)
     })
 }
-module.exports = {sendEmail};
+module.exports = {sendEmail, mailjet};

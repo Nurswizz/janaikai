@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 run();
 
 // Middlewares
-app.use(cors({ origin: process.env.URL_FRONTEND}));
+app.use(cors({ origin: process.env.URL_FRONTEND, credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
