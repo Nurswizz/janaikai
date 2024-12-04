@@ -3,36 +3,19 @@ import { useState, useEffect } from "react";
 import Article from "../../components/Article/Article";
 import "./Articles.css";
 
+const errorMessages = (error, setResponseMessage) => {
+  if (error.response && error.response.status === 403) {
+    setResponseMessage("Forbidden: You do not have access to this resource");
+  } else if (error.response && error.response.status === 401) {
+    setResponseMessage("Unauthorized: Please log in");
+  } else {
+    setResponseMessage("An error occurred");
+  }
+  console.error("Error:", error.response || error);
+};
 
-const Articles = () => {
-  const [, setResponseMessage] = useState(null);
-  const [articles, setArticles] = useState([]);
-  const token = localStorage.getItem("token");
-  useEffect(() => {
-    const getArticles = async () => {
-      try {
-        const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/admin/admin-panel/articles`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-        setArticles(res.data); // Assuming `res.data` contains the array of articles
-      } catch (error) {
-        if (error.response && error.response.status === 403) {
-          setResponseMessage("Forbidden: You do not have access to this resource");
-        } else if (error.response && error.response.status === 401) {
-          setResponseMessage("Unauthorized: Please log in");
-        } else {
-          setResponseMessage("An error occurred");
-        }
-        console.error("Error:", error.response || error);
-      }
-    };
-
-    getArticles();
-  }, []); // Empty dependency array ensures this runs only once on mount
+const ArticleUpload = () => {
+  const [responseMessage, setResponseMessage] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,52 +42,99 @@ const Articles = () => {
         }
       );
       setResponseMessage(res.data.message);
+      e.target.reset();
     } catch (error) {
-      if (error.response && error.response.status === 403) {
-        setResponseMessage("Forbidden: You do not have access to this resource");
-      } else if (error.response && error.response.status === 401) {
-        setResponseMessage("Unauthorized: Please log in");
-      } else {
-        setResponseMessage("An error occurred");
+      errorMessages(error, setResponseMessage);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <h1 style={{ color: "black" }}>Upload article</h1>
+        <label htmlFor="image">Image:</label>
+        <input type="file" name="image" id="image" accept="image/*" required />
+      </div>
+      <div>
+        <label htmlFor="title">Title:</label>
+        <input type="text" name="title" id="title" required />
+      </div>
+      <div>
+        <label htmlFor="link">Link:</label>
+        <input type="text" name="link" id="link" required />
+      </div>
+      <button type="submit">Upload</button>
+      {responseMessage && <p>{responseMessage}</p>}
+    </form>
+  );
+};
+
+const Articles = () => {
+  const [responseMessage, setResponseMessage] = useState(null);
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const getArticles = async () => {
+      try {
+        const res = await axios.get(
+          `${import.meta.env.VITE_BACKEND_URL}/admin/admin-panel/articles`
+        );
+        setArticles(res.data);
+      } catch (error) {
+        errorMessages(error, setResponseMessage);
       }
-      console.error("Error:", error.response || error);
+    };
+
+    getArticles();
+  }, []);
+
+  const deleteArticle = async (id) => {
+    if (!id) {
+      setResponseMessage("Invalid article ID");
+      return;
+    }
+
+    const token = localStorage.getItem("token");
+    try {
+      const res = await axios.delete(
+        `${import.meta.env.VITE_BACKEND_URL}/admin/admin-panel/delete/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      setResponseMessage(res.data.message);
+      setArticles((prevArticles) => prevArticles.filter((article) => article._id !== id));
+    } catch (error) {
+      errorMessages(error, setResponseMessage);
     }
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        {/* Form fields with labels and required attributes */}
-        <div>
-          <h1 style={{color: "black"}}>Upload article</h1>
-          <label htmlFor="image">Image:</label>
-          <input type="file" name="image" id="image" accept="image/*" required />
-        </div>
-        <div>
-          <label htmlFor="title">Title:</label>
-          <input type="text" name="title" id="title" required />
-        </div>
-        <div>
-          <label htmlFor="link">Link:</label>
-          <input type="text" name="link" id="link" required />
-        </div>
-        <button type="submit">Upload</button>
-      </form>
+      <ArticleUpload />
       <div className="admin-articles">
         <h1 style={{ color: "black" }}>All articles</h1>
         <div className="articles-content">
-          {articles.length > 0 ? (
-            articles.map((article) => (
-              <div key={article.id}>
-                <Article title={article.title} img={article.imageUrl} link={article.link} />
-                <p>{article.imageId}</p>
-              </div>
-            ))
+          {articles && articles.length > 0 ? (
+            articles.map((article) => {
+              if (!article || !article._id || !article.title) {
+                return <p key={article._id}>Invalid article data</p>;
+              }
+              return (
+                <div key={article._id}>
+                  <Article title={article.title} img={article.imageUrl} link={article.link} />
+                  <button onClick={() => deleteArticle(article._id)}>Delete article</button>
+                </div>
+              );
+            })
           ) : (
             <p>No articles found</p>
           )}
         </div>
       </div>
+      {responseMessage && <p>{responseMessage}</p>}
     </>
   );
 };

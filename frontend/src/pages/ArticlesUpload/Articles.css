@@ -2,4 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     gap:100px;
+    
+}
+.articles-content button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s;
+}
+.articles-content button:hover {
+    background-color: #333;
+    color: #f1f1f1;
 }
