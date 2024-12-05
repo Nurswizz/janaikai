@@ -6,20 +6,40 @@ import './Articles.css';
 import pencil from '../../assets/icons/Pencil.png';
 import book from '../../assets/icons/Reading.svg';
 
-import Article1 from '../../assets/Articles/Article1.webp';
-import Article2 from '../../assets/Articles/Article2.webp';
-import Article3 from '../../assets/Articles/Article3.webp';
-import Article4 from '../../assets/Articles/Article4.webp';
-import Article5 from '../../assets/Articles/Article5.webp';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { errorMessages } from '../../utils/messages';
 
 const Articles = () => {
+    const [articles, setArticles] = useState([]);
+    const [responseMessage, setResponseMessage] = useState(null);
+
+    useEffect(() => {
+        const getArticles = async () => {
+            try {
+                const res = await axios.get(
+                    `${import.meta.env.VITE_BACKEND_URL}/admin/admin-panel/articles`
+                );
+                setArticles(res.data);
+                } catch (error) {
+                    errorMessages(error, setResponseMessage);
+                }
+            };
+            getArticles();
+        }, []);
+
     return (
         <div className='articles'>
-            <Article img={Article1} title='Куда обратиться за помощью, когда она тебе нужна' />
-            <Article img={Article2} title='Как воспитывать ребенка без насильственных методов'/>
-            <Article img={Article3} title='Как бытовое насилие сказывается на детском ментальном здоровье.'/>
-            <Article img={Article4} title='Типы насилия в отношении детей'/>
-            <Article img={Article5}title='Определение и влияние психологического насилия'/>
+            {articles.map((article) => {
+                return (
+                <Article 
+                    key={article._id}
+                    title={article.title}
+                    img={article.imageUrl}
+                    link={article.link} /> );
+                
+            })}
+            {responseMessage && <p>{responseMessage}</p>}
         </div>
     )
 }
